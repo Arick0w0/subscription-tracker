@@ -9,8 +9,8 @@ if (fs.existsSync(localEnvPath)) {
   config({ path: localEnvPath });
 }
 
-export const PORT = process.env.PORT || 5500;
 export const {
+  PORT,
   NODE_ENV,
   SERVE_URL,
   DB_URI,

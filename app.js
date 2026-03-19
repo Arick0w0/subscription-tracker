@@ -13,9 +13,6 @@ import workflowRouter from "./routes/workflow.routes.js";
 
 const app = express();
 
-// Trust proxy to get real client IP (required for Render, Heroku, etc.)
-app.set('trust proxy', true);
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
