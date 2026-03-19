@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { sendRenewalReminder } from "../cotrollers/workflow.controller.js";
+import { sendReminders } from "../cotrollers/workflow.controller.js";
 
 const workflowRouter = Router();
 
-workflowRouter.post("/subscription/reminder", sendRenewalReminder);
+workflowRouter.post("/subscription/reminder", sendReminders);
 
 export default workflowRouter;
